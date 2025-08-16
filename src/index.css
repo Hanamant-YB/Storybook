@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .input-field-base {
+    @apply w-full transition-all duration-200 ease-in-out;
+  }
+  
+  .input-field-focused {
+    @apply ring-2 ring-primary-500 ring-offset-0;
+  }
+  
+  .input-field-error {
+    @apply border-red-500 text-red-600;
+  }
+  
+  .input-field-disabled {
+    @apply bg-gray-100 text-gray-500 cursor-not-allowed;
+  }
+}
